@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "927422623882",
+    "project_id": "hall-service-app-a39a3",
+    "storage_bucket": "hall-service-app-a39a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927422623882:android:118dcba87f2ff6c4307d73",
+        "android_client_info": {
+          "package_name": "com.example.hallserviceapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArrJ9ZWcVstxMK_-YD0MW93IP1fD0qyok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

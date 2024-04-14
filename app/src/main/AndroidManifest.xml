@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HallServiceApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".DynamicFoodActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dynamic_food"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DeleteCanteenActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_canteen"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".AddCanteenActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_canteen"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DeleteDiningActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_dining"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".AddDiningActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_dining"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ReadCanteenActivity"
+            android:exported="false"
+            android:label="@string/title_activity_read_canteen"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ReadDiningActivity"
+            android:exported="false"
+            android:label="@string/title_activity_read_dining"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DeleteOfficesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_offices"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DeleteAuthorityActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_authority"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DeleteStudentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_student"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".RemoveUserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_remove_user"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".AddUserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add_user"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".StudentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_student"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".NoticeTextActivity"
+            android:exported="false"
+            android:label="@string/title_activity_notice_text"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".NoticeFileTextActivity"
+            android:exported="false"
+            android:label="@string/title_activity_notice_file_text"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DeleteNoticeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_delete_notice"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".UpdateStudentActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update_student"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".UpdateOfficeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update_office"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".UpdateAuthorityActivity"
+            android:exported="false"
+            android:label="@string/title_activity_update_authority"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ReadComplaintsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_read_complaints"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".FrontAdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_front_admin"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".AuthorityActivity"
+            android:exported="false"
+            android:label="@string/title_activity_authority"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".UploadNoticeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_upload_notice"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".OfficeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_office"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".NoticeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_notice"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ServicesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_services"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".StudentsInformationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_students_information"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ComplaintsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_complaints"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ContactsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_contacts"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".SportsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sports"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".MedicineActivity"
+            android:exported="false"
+            android:label="@string/title_activity_medicine"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".ShopActivity"
+            android:exported="false"
+            android:label="@string/title_activity_shop"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".CanteenActivity"
+            android:exported="false"
+            android:label="@string/title_activity_canteen"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".DiningActivity"
+            android:exported="false"
+            android:label="@string/title_activity_dining"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".FoodActivity"
+            android:exported="false"
+            android:label="@string/title_activity_food"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".UserActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.HallServiceApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
