@@ -42,4 +42,7 @@
     <string name="title_activity_add_canteen">AddCanteenActivity</string>
     <string name="title_activity_delete_canteen">DeleteCanteenActivity</string>
     <string name="title_activity_dynamic_food">DynamicFoodActivity</string>
+    <string name="title_activity_sign_up_main">SignUpMainActi</string>
+    <string name="title_activity_sign_up_for">SignUpForActiv</string>
+    <string name="title_activity_verify_otpactiv">VerifyOTPActiv</string>
 </resources>

@@ -3,11 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -18,202 +21,202 @@
         android:theme="@style/Theme.HallServiceApp"
         tools:targetApi="31">
         <activity
-            android:name=".DynamicFoodActivity"
+            android:name=".presentation.SignUpForActiv"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up_for"
+            android:theme="@style/Theme.HallServiceApp" />
+        <activity
+            android:name=".presentation.DynamicFoodActivity"
             android:exported="false"
             android:label="@string/title_activity_dynamic_food"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DeleteCanteenActivity"
+            android:name=".presentation.DeleteCanteenActivity"
             android:exported="false"
             android:label="@string/title_activity_delete_canteen"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".AddCanteenActivity"
+            android:name=".presentation.AddCanteenActivity"
             android:exported="false"
             android:label="@string/title_activity_add_canteen"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DeleteDiningActivity"
+            android:name=".presentation.DeleteDiningActivity"
             android:exported="false"
             android:label="@string/title_activity_delete_dining"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".AddDiningActivity"
+            android:name=".presentation.AddDiningActivity"
             android:exported="false"
             android:label="@string/title_activity_add_dining"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ReadCanteenActivity"
+            android:name=".presentation.ReadCanteenActivity"
             android:exported="false"
             android:label="@string/title_activity_read_canteen"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ReadDiningActivity"
+            android:name=".presentation.ReadDiningActivity"
             android:exported="false"
             android:label="@string/title_activity_read_dining"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DeleteOfficesActivity"
+            android:name=".presentation.DeleteOfficesActivity"
             android:exported="false"
             android:label="@string/title_activity_delete_offices"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DeleteAuthorityActivity"
+            android:name=".presentation.DeleteAuthorityActivity"
             android:exported="false"
             android:label="@string/title_activity_delete_authority"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DeleteStudentActivity"
+            android:name=".presentation.DeleteStudentActivity"
             android:exported="false"
             android:label="@string/title_activity_delete_student"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".RemoveUserActivity"
+            android:name=".presentation.RemoveUserActivity"
             android:exported="false"
             android:label="@string/title_activity_remove_user"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".AddUserActivity"
+            android:name=".presentation.AddUserActivity"
             android:exported="false"
             android:label="@string/title_activity_add_user"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".StudentActivity"
+            android:name=".presentation.StudentActivity"
             android:exported="false"
             android:label="@string/title_activity_student"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".NoticeTextActivity"
+            android:name=".presentation.NoticeTextActivity"
             android:exported="false"
             android:label="@string/title_activity_notice_text"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".NoticeFileTextActivity"
+            android:name=".presentation.NoticeFileTextActivity"
             android:exported="false"
             android:label="@string/title_activity_notice_file_text"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DeleteNoticeActivity"
+            android:name=".presentation.DeleteNoticeActivity"
             android:exported="false"
             android:label="@string/title_activity_delete_notice"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".UpdateStudentActivity"
+            android:name=".presentation.UpdateStudentActivity"
             android:exported="false"
             android:label="@string/title_activity_update_student"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".UpdateOfficeActivity"
+            android:name=".presentation.UpdateOfficeActivity"
             android:exported="false"
             android:label="@string/title_activity_update_office"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".UpdateAuthorityActivity"
+            android:name=".presentation.UpdateAuthorityActivity"
             android:exported="false"
             android:label="@string/title_activity_update_authority"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ReadComplaintsActivity"
+            android:name=".presentation.ReadComplaintsActivity"
             android:exported="false"
             android:label="@string/title_activity_read_complaints"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".FrontAdminActivity"
+            android:name=".presentation.FrontAdminActivity"
             android:exported="false"
             android:label="@string/title_activity_front_admin"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ResetPasswordActivity"
+            android:name=".presentation.ResetPasswordActivity"
             android:exported="false"
             android:label="@string/title_activity_reset_password"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".AuthorityActivity"
+            android:name=".presentation.AuthorityActivity"
             android:exported="false"
             android:label="@string/title_activity_authority"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".UploadNoticeActivity"
+            android:name=".presentation.UploadNoticeActivity"
             android:exported="false"
             android:label="@string/title_activity_upload_notice"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".AdminActivity"
+            android:name=".presentation.AdminActivity"
             android:exported="false"
             android:label="@string/title_activity_admin"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".OfficeActivity"
+            android:name=".presentation.OfficeActivity"
             android:exported="false"
             android:label="@string/title_activity_office"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".NoticeActivity"
+            android:name=".presentation.NoticeActivity"
             android:exported="false"
             android:label="@string/title_activity_notice"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ServicesActivity"
+            android:name=".presentation.ServicesActivity"
             android:exported="false"
             android:label="@string/title_activity_services"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".StudentsInformationActivity"
+            android:name=".presentation.StudentsInformationActivity"
             android:exported="false"
             android:label="@string/title_activity_students_information"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ComplaintsActivity"
+            android:name=".presentation.ComplaintsActivity"
             android:exported="false"
             android:label="@string/title_activity_complaints"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ContactsActivity"
+            android:name=".presentation.ContactsActivity"
             android:exported="false"
             android:label="@string/title_activity_contacts"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".SportsActivity"
+            android:name=".presentation.SportsActivity"
             android:exported="false"
             android:label="@string/title_activity_sports"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".MedicineActivity"
+            android:name=".presentation.MedicineActivity"
             android:exported="false"
             android:label="@string/title_activity_medicine"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".ShopActivity"
+            android:name=".presentation.ShopActivity"
             android:exported="false"
             android:label="@string/title_activity_shop"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".CanteenActivity"
+            android:name=".presentation.CanteenActivity"
             android:exported="false"
             android:label="@string/title_activity_canteen"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".DiningActivity"
+            android:name=".presentation.DiningActivity"
             android:exported="false"
             android:label="@string/title_activity_dining"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".FoodActivity"
+            android:name=".presentation.FoodActivity"
             android:exported="false"
             android:label="@string/title_activity_food"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".UserActivity"
+            android:name=".presentation.UserActivity"
             android:exported="false"
             android:label="@string/title_activity_user"
             android:theme="@style/Theme.HallServiceApp" />
         <activity
-            android:name=".SignUpActivity"
-            android:exported="false"
-            android:label="@string/title_activity_sign_up"
-            android:theme="@style/Theme.HallServiceApp" />
-        <activity
-            android:name=".LoginActivity"
+            android:name=".presentation.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.HallServiceApp" />
